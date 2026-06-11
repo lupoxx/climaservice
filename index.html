@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimaService</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>🌤️ ClimaService</h1>
+    <p class="subtitle">Demo statica — JavaScript nativo</p>
+
+    <form id="search-form" autocomplete="off">
+      <input
+        type="text"
+        id="city"
+        placeholder="Inserisci una città…"
+        aria-label="Città"
+        required
+      />
+      <button type="submit">Cerca</button>
+    </form>
+
+    <section id="result" class="result" hidden>
+      <h2 id="result-city"></h2>
+      <p id="result-temp" class="temp"></p>
+      <p id="result-desc" class="desc"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
