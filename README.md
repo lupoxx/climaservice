@@ -8,10 +8,14 @@ Realizzato in **HTML/CSS/JavaScript nativo**, senza framework né dipendenze —
 ## Struttura
 
 ```
-index.html   Markup: hero, servizi, perché noi, zona, lavori, recensioni, contatti, footer
-style.css    Stili (mobile-first, palette blu/azzurro)
-script.js    Menu mobile + form contatti che apre WhatsApp precompilato
+docs/            cartella servita da GitHub Pages
+  index.html     Markup: hero, servizi, perché noi, zona, lavori, recensioni, contatti, footer
+  style.css      Stili (mobile-first, palette blu/azzurro)
+  script.js      Menu mobile + form contatti che apre WhatsApp precompilato
 ```
+
+Su GitHub Pages: *Settings → Pages → branch `release`, cartella `/docs`*.
+Vedi `CLAUDE.md` per i dettagli completi del progetto.
 
 ## Sezioni
 
@@ -26,15 +30,15 @@ script.js    Menu mobile + form contatti che apre WhatsApp precompilato
 
 ## Da personalizzare
 
-- Recapiti in `index.html` (`tel:`, link `wa.me`, email) e il numero in `script.js` (`WHATSAPP_NUMBER`)
+- Recapiti in `docs/index.html` (`tel:`, link `wa.me`, email) e il numero in `docs/script.js` (`WHATSAPP_NUMBER`)
 - Link social (attualmente `#`)
 - Foto reali al posto dei segnaposto nella gallery
 - Nome, P.IVA e dati nel footer
 
 ## Avvio locale
 
-Apri `index.html`, oppure servi la cartella:
+Apri `docs/index.html`, oppure servi la cartella:
 
 ```bash
-python -m http.server
+python -m http.server --directory docs
 ```
