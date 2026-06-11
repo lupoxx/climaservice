@@ -3,31 +3,224 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClimaService</title>
+  <title>ClimaService — Installazione e assistenza climatizzatori a Brescia</title>
+  <meta name="description" content="Marco Belotti, tecnico installatore di climatizzatori e pompe di calore a Brescia e provincia. Installazione, manutenzione, ricarica gas F-GAS e gestione bonus fiscali. Preventivo gratuito." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="card">
-    <h1>🌤️ ClimaService</h1>
-    <p class="subtitle">Demo statica — JavaScript nativo</p>
 
-    <form id="search-form" autocomplete="off">
-      <input
-        type="text"
-        id="city"
-        placeholder="Inserisci una città…"
-        aria-label="Città"
-        required
-      />
-      <button type="submit">Cerca</button>
-    </form>
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo">❄ <span>Clima</span>Service</a>
+      <nav class="nav" id="nav">
+        <a href="#servizi">Servizi</a>
+        <a href="#perche">Perché noi</a>
+        <a href="#zona">Zona servita</a>
+        <a href="#lavori">Lavori</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a href="#contatti" class="btn btn-primary header-cta">Preventivo gratuito</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
-    <section id="result" class="result" hidden>
-      <h2 id="result-city"></h2>
-      <p id="result-temp" class="temp"></p>
-      <p id="result-desc" class="desc"></p>
-    </section>
-  </main>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Brescia e provincia</p>
+      <h1>Installazione e assistenza climatizzatori</h1>
+      <p class="lead">
+        Tecnico qualificato con oltre 12 anni di esperienza. Impianti a regola
+        d'arte, manutenzione e ricarica gas — con gestione dei bonus fiscali.
+      </p>
+      <div class="hero-actions">
+        <a href="tel:+390301234567" class="btn btn-primary">📞 Chiama ora</a>
+        <a href="https://wa.me/393331234567" class="btn btn-whatsapp">💬 Scrivi su WhatsApp</a>
+      </div>
+      <ul class="hero-badges">
+        <li>✔ Patentino F-GAS</li>
+        <li>✔ Preventivo gratuito</li>
+        <li>✔ Tutte le marche</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Servizi ===== -->
+  <section id="servizi" class="section">
+    <div class="container">
+      <h2 class="section-title">I servizi</h2>
+      <p class="section-sub">Tutto quello che serve per il tuo impianto, dall'installazione all'assistenza.</p>
+      <div class="grid grid-3">
+        <article class="card service">
+          <div class="service-icon">🛠️</div>
+          <h3>Installazione climatizzatori</h3>
+          <p>Mono e multisplit installati in tempi rapidi, puliti e a regola d'arte.</p>
+        </article>
+        <article class="card service">
+          <div class="service-icon">🔥❄️</div>
+          <h3>Pompe di calore</h3>
+          <p>Soluzioni efficienti per riscaldare e raffrescare casa tutto l'anno.</p>
+        </article>
+        <article class="card service">
+          <div class="service-icon">🧼</div>
+          <h3>Manutenzione e sanificazione</h3>
+          <p>Pulizia filtri, igienizzazione e controllo delle prestazioni.</p>
+        </article>
+        <article class="card service">
+          <div class="service-icon">🔧</div>
+          <h3>Assistenza e riparazione</h3>
+          <p>Diagnosi guasti e ripristino rapido su impianti di ogni marca.</p>
+        </article>
+        <article class="card service">
+          <div class="service-icon">🧪</div>
+          <h3>Ricarica gas refrigerante</h3>
+          <p>Interventi a norma eseguiti con patentino F-GAS certificato.</p>
+        </article>
+        <article class="card service">
+          <div class="service-icon">📋</div>
+          <h3>Sopralluogo e preventivo</h3>
+          <p>Consulenza gratuita e senza impegno, anche per i bonus fiscali.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Perché noi ===== -->
+  <section id="perche" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Perché scegliere ClimaService</h2>
+      <p class="section-sub">Un professionista serio, non un'improvvisazione.</p>
+      <div class="grid grid-3">
+        <div class="feature"><span class="feature-num">12+</span><p>Anni di esperienza sul campo</p></div>
+        <div class="feature"><span class="feature-ico">📜</span><p>Patentino F-GAS certificato</p></div>
+        <div class="feature"><span class="feature-ico">✅</span><p>Abilitazione DM 37/08</p></div>
+        <div class="feature"><span class="feature-ico">🛡️</span><p>Assicurazione RC professionale</p></div>
+        <div class="feature"><span class="feature-ico">💶</span><p>Gestione pratiche detrazioni fiscali</p></div>
+        <div class="feature"><span class="feature-ico">⏱️</span><p>Preventivi chiari e puntualità</p></div>
+      </div>
+
+      <h3 class="brands-title">Lavoro con i migliori marchi</h3>
+      <ul class="brands">
+        <li>Daikin</li>
+        <li>Mitsubishi Electric</li>
+        <li>Samsung</li>
+        <li>LG</li>
+        <li>Haier</li>
+        <li>Hisense</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Zona servita ===== -->
+  <section id="zona" class="section">
+    <div class="container">
+      <h2 class="section-title">Zona servita</h2>
+      <p class="section-sub">Interventi in tutta Brescia e provincia.</p>
+      <ul class="zone-list">
+        <li>Brescia città</li>
+        <li>Franciacorta</li>
+        <li>Desenzano del Garda</li>
+        <li>Montichiari</li>
+        <li>Rovato</li>
+        <li>Palazzolo sull'Oglio</li>
+        <li>Chiari</li>
+        <li>Lonato del Garda</li>
+        <li>Gussago</li>
+        <li>Concesio</li>
+        <li>Lumezzane</li>
+        <li>Bassa Bresciana</li>
+      </ul>
+      <p class="zone-note">Non trovi il tuo comune? <a href="#contatti">Contattami</a>, valuto ogni richiesta.</p>
+    </div>
+  </section>
+
+  <!-- ===== Lavori / Gallery ===== -->
+  <section id="lavori" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Alcuni lavori</h2>
+      <p class="section-sub">Qualche esempio di impianti realizzati.</p>
+      <div class="gallery">
+        <figure class="shot shot-1"><figcaption>Mono-split soggiorno — Brescia</figcaption></figure>
+        <figure class="shot shot-2"><figcaption>Multisplit appartamento — Desenzano</figcaption></figure>
+        <figure class="shot shot-3"><figcaption>Pompa di calore — Franciacorta</figcaption></figure>
+        <figure class="shot shot-4"><figcaption>Unità esterna ufficio — Montichiari</figcaption></figure>
+        <figure class="shot shot-5"><figcaption>Sanificazione impianto — Rovato</figcaption></figure>
+        <figure class="shot shot-6"><figcaption>Installazione canalizzato — Chiari</figcaption></figure>
+      </div>
+      <p class="zone-note">Le immagini sono segnaposto: qui andranno le foto reali dei tuoi impianti.</p>
+    </div>
+  </section>
+
+  <!-- ===== Recensioni ===== -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Cosa dicono i clienti</h2>
+      <div class="grid grid-3">
+        <blockquote class="card review">
+          <p>"Ha installato due split a casa nostra: puntuale, pulito e prezzo onesto. Consigliatissimo!"</p>
+          <footer>★★★★★ — Laura V., Brescia</footer>
+        </blockquote>
+        <blockquote class="card review">
+          <p>"Intervento rapido per la ricarica del gas, mi ha spiegato tutto con chiarezza. Professionista serio."</p>
+          <footer>★★★★★ — Giuseppe M., Montichiari</footer>
+        </blockquote>
+        <blockquote class="card review">
+          <p>"Ottimo lavoro sulla pompa di calore e mi ha seguito anche per la pratica del bonus. Top."</p>
+          <footer>★★★★★ — Andrea T., Desenzano</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contatti ===== -->
+  <section id="contatti" class="section section-dark">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2 class="section-title">Contattami</h2>
+        <p class="section-sub light">Rispondo a preventivi e richieste tutti i giorni lavorativi.</p>
+        <ul class="contact-list">
+          <li>📞 <a href="tel:+390301234567">030 123 4567</a></li>
+          <li>💬 <a href="https://wa.me/393331234567">WhatsApp 333 123 4567</a></li>
+          <li>✉️ <a href="mailto:info@climaservice.it">info@climaservice.it</a></li>
+          <li>📍 Brescia e provincia</li>
+          <li>🕒 Lun–Ven 8:00–18:30 · Sab 8:00–12:30</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Facebook" class="social">Facebook</a>
+          <a href="#" aria-label="Instagram" class="social">Instagram</a>
+          <a href="https://wa.me/393331234567" aria-label="WhatsApp" class="social">WhatsApp</a>
+        </div>
+      </div>
+
+      <form class="contact-form card" id="contact-form">
+        <h3>Richiedi un preventivo gratuito</h3>
+        <label>Nome <input type="text" id="f-nome" required /></label>
+        <label>Telefono <input type="tel" id="f-tel" required /></label>
+        <label>Comune <input type="text" id="f-comune" placeholder="Es. Brescia" /></label>
+        <label>Di cosa hai bisogno?
+          <textarea id="f-msg" rows="3" placeholder="Es. installazione mono-split in soggiorno"></textarea>
+        </label>
+        <button type="submit" class="btn btn-whatsapp full">💬 Invia richiesta su WhatsApp</button>
+        <p class="form-note">Si aprirà WhatsApp con il messaggio già compilato.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>ClimaService</strong> di Marco Belotti — Climatizzazione a Brescia e provincia</p>
+      <p class="footer-small">P.IVA 04567890987 · Patentino F-GAS · Abilitazione DM 37/08</p>
+      <p class="footer-small">© 2026 ClimaService — Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <!-- ===== Barra azioni mobile ===== -->
+  <nav class="mobile-bar">
+    <a href="tel:+390301234567">📞 Chiama</a>
+    <a href="https://wa.me/393331234567">💬 WhatsApp</a>
+  </nav>
 
   <script src="script.js"></script>
 </body>

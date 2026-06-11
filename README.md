@@ -1,25 +1,40 @@
 # ClimaService
 
-Sito statico di prova, minimal, in **JavaScript nativo** (nessun framework, nessuna dipendenza).
+Sito vetrina one-page per un tecnico installatore di climatizzatori a **Brescia e provincia**.
+Realizzato in **HTML/CSS/JavaScript nativo**, senza framework né dipendenze — ideale per GitHub Pages.
 
-Mostra un meteo simulato per la città inserita — pensato come demo/scaffold di partenza.
+> ⚠️ Tutti i contenuti attuali (nome, recapiti, P.IVA, recensioni, foto) sono **segnaposto inventati**, da sostituire con quelli reali.
 
 ## Struttura
 
 ```
-index.html   Markup della pagina
-style.css    Stili
-script.js    Logica (dati meteo simulati)
+index.html   Markup: hero, servizi, perché noi, zona, lavori, recensioni, contatti, footer
+style.css    Stili (mobile-first, palette blu/azzurro)
+script.js    Menu mobile + form contatti che apre WhatsApp precompilato
 ```
 
-## Avvio
+## Sezioni
 
-Apri `index.html` nel browser, oppure servi la cartella con un server statico:
+- **Hero** con pulsanti Chiama / WhatsApp
+- **Servizi** (installazione, pompe di calore, manutenzione, riparazione, ricarica gas, preventivo)
+- **Perché noi** (esperienza, F-GAS, DM 37/08, assicurazione, bonus fiscali) + marchi
+- **Zona servita** (comuni della provincia di Brescia)
+- **Lavori** (gallery segnaposto)
+- **Recensioni**
+- **Contatti + social** con form che genera un messaggio WhatsApp
+- **Barra fissa mobile** Chiama / WhatsApp
+
+## Da personalizzare
+
+- Recapiti in `index.html` (`tel:`, link `wa.me`, email) e il numero in `script.js` (`WHATSAPP_NUMBER`)
+- Link social (attualmente `#`)
+- Foto reali al posto dei segnaposto nella gallery
+- Nome, P.IVA e dati nel footer
+
+## Avvio locale
+
+Apri `index.html`, oppure servi la cartella:
 
 ```bash
-npx serve .
-# oppure
 python -m http.server
 ```
-
-> I dati meteo sono generati casualmente a scopo dimostrativo: non viene chiamata alcuna API esterna.
