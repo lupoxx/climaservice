@@ -1,0 +1,101 @@
+{
+  "azienda": {
+    "nome": "ClimaService",
+    "titolare": "Marco Belotti",
+    "payoff": "Clima perfetto, tutto l'anno",
+    "zona": "Brescia e provincia",
+    "piva": "04567890987",
+    "certificazioni": "Patentino F-GAS · Abilitazione DM 37/08",
+    "copyright": "© 2026 ClimaService — Tutti i diritti riservati"
+  },
+
+  "contatti": {
+    "telefono": "030 123 4567",
+    "telefonoLink": "+390301234567",
+    "whatsapp": "333 123 4567",
+    "whatsappNumero": "393331234567",
+    "email": "info@climaservice.it",
+    "orari": "Lun–Ven 8:00–18:30 · Sab 8:00–12:30"
+  },
+
+  "social": [
+    { "nome": "Facebook", "url": "#" },
+    { "nome": "Instagram", "url": "#" },
+    { "nome": "WhatsApp", "url": "https://wa.me/393331234567" }
+  ],
+
+  "hero": {
+    "eyebrow": "Brescia e provincia",
+    "titolo": "Installazione e assistenza climatizzatori",
+    "testo": "Tecnico qualificato con oltre 12 anni di esperienza. Impianti a regola d'arte, manutenzione e ricarica gas — con gestione dei bonus fiscali.",
+    "badges": ["Patentino F-GAS", "Preventivo gratuito", "Tutte le marche"]
+  },
+
+  "servizi": {
+    "titolo": "I servizi",
+    "sottotitolo": "Tutto quello che serve per il tuo impianto, dall'installazione all'assistenza.",
+    "elenco": [
+      { "icona": "🛠️", "titolo": "Installazione climatizzatori", "testo": "Mono e multisplit installati in tempi rapidi, puliti e a regola d'arte." },
+      { "icona": "🔥❄️", "titolo": "Pompe di calore", "testo": "Soluzioni efficienti per riscaldare e raffrescare casa tutto l'anno." },
+      { "icona": "🧼", "titolo": "Manutenzione e sanificazione", "testo": "Pulizia filtri, igienizzazione e controllo delle prestazioni." },
+      { "icona": "🔧", "titolo": "Assistenza e riparazione", "testo": "Diagnosi guasti e ripristino rapido su impianti di ogni marca." },
+      { "icona": "🧪", "titolo": "Ricarica gas refrigerante", "testo": "Interventi a norma eseguiti con patentino F-GAS certificato." },
+      { "icona": "📋", "titolo": "Sopralluogo e preventivo", "testo": "Consulenza gratuita e senza impegno, anche per i bonus fiscali." }
+    ]
+  },
+
+  "perche": {
+    "titolo": "Perché scegliere ClimaService",
+    "sottotitolo": "Un professionista serio, non un'improvvisazione.",
+    "elenco": [
+      { "numero": "12+", "testo": "Anni di esperienza sul campo" },
+      { "icona": "📜", "testo": "Patentino F-GAS certificato" },
+      { "icona": "✅", "testo": "Abilitazione DM 37/08" },
+      { "icona": "🛡️", "testo": "Assicurazione RC professionale" },
+      { "icona": "💶", "testo": "Gestione pratiche detrazioni fiscali" },
+      { "icona": "⏱️", "testo": "Preventivi chiari e puntualità" }
+    ],
+    "marchiTitolo": "Lavoro con i migliori marchi",
+    "marchi": ["Daikin", "Mitsubishi Electric", "Samsung", "LG", "Haier", "Hisense"]
+  },
+
+  "zona": {
+    "titolo": "Zona servita",
+    "sottotitolo": "Interventi in tutta Brescia e provincia.",
+    "comuni": [
+      "Brescia città", "Franciacorta", "Desenzano del Garda", "Montichiari",
+      "Rovato", "Palazzolo sull'Oglio", "Chiari", "Lonato del Garda",
+      "Gussago", "Concesio", "Lumezzane", "Bassa Bresciana"
+    ],
+    "nota": "Non trovi il tuo comune? Contattami, valuto ogni richiesta."
+  },
+
+  "lavori": {
+    "titolo": "Alcuni lavori",
+    "sottotitolo": "Qualche esempio di impianti realizzati.",
+    "nota": "Le immagini sono segnaposto: qui andranno le foto reali dei tuoi impianti.",
+    "elenco": [
+      { "titolo": "Mono-split soggiorno — Brescia", "immagine": "" },
+      { "titolo": "Multisplit appartamento — Desenzano", "immagine": "" },
+      { "titolo": "Pompa di calore — Franciacorta", "immagine": "" },
+      { "titolo": "Unità esterna ufficio — Montichiari", "immagine": "" },
+      { "titolo": "Sanificazione impianto — Rovato", "immagine": "" },
+      { "titolo": "Installazione canalizzato — Chiari", "immagine": "" }
+    ]
+  },
+
+  "recensioni": {
+    "titolo": "Cosa dicono i clienti",
+    "elenco": [
+      { "testo": "Ha installato due split a casa nostra: puntuale, pulito e prezzo onesto. Consigliatissimo!", "autore": "Laura V., Brescia", "stelle": 5 },
+      { "testo": "Intervento rapido per la ricarica del gas, mi ha spiegato tutto con chiarezza. Professionista serio.", "autore": "Giuseppe M., Montichiari", "stelle": 5 },
+      { "testo": "Ottimo lavoro sulla pompa di calore e mi ha seguito anche per la pratica del bonus. Top.", "autore": "Andrea T., Desenzano", "stelle": 5 }
+    ]
+  },
+
+  "contattiSezione": {
+    "titolo": "Contattami",
+    "sottotitolo": "Rispondo a preventivi e richieste tutti i giorni lavorativi.",
+    "formTitolo": "Richiedi un preventivo gratuito"
+  }
+}

@@ -47,10 +47,31 @@ climaservice/
 ├── CLAUDE.md          questo file
 ├── README.md          descrizione e istruzioni
 └── docs/              <-- cartella servita da GitHub Pages
-    ├── index.html     markup di tutte le sezioni
+    ├── index.html     SOLO struttura: contenitori vuoti con id, nessun contenuto
     ├── style.css      stili (palette blu/azzurro, responsive)
-    └── script.js      menu mobile + form -> WhatsApp
+    ├── script.js      legge content.json e popola la pagina + form -> WhatsApp
+    └── content.json   <-- TUTTI i contenuti (il "database" del sito)
 ```
+
+## ⭐ Contenuti separati: `content.json`
+
+I testi NON stanno più nell'HTML. Tutto il contenuto (nome, recapiti, social,
+hero, servizi, "perché noi", marchi, zona, lavori, recensioni) vive in
+**`docs/content.json`**. `script.js` lo carica con `fetch()` e costruisce il DOM.
+
+**Per modificare il sito si edita solo `content.json`** — non serve toccare HTML o JS.
+
+Schema (chiavi principali): `azienda`, `contatti`, `social[]`, `hero`,
+`servizi{titolo,sottotitolo,elenco[]}`, `perche{...,marchi[]}`, `zona{comuni[]}`,
+`lavori{elenco[]}`, `recensioni{elenco[]}`, `contattiSezione`.
+
+- Per le **foto reali**: in `lavori.elenco[].immagine` metti il percorso
+  dell'immagine (es. `"img/lavoro1.jpg"`, file dentro `docs/`). Se vuoto, resta
+  il segnaposto grafico a gradiente.
+- Le voci `feature` in `perche.elenco` accettano `numero` **oppure** `icona`.
+
+> ⚠️ `fetch()` non funziona aprendo `index.html` con doppio clic (protocollo
+> `file://`). Serve un server locale o GitHub Pages (vedi sotto).
 
 ### Sezioni di `index.html`
 Header → Hero → Servizi (6) → Perché noi + Marchi → Zona servita → Lavori (gallery)
@@ -82,13 +103,12 @@ Oppure apri direttamente `docs/index.html` nel browser.
 
 ## Come modificare le cose comuni
 
-- **Recapiti:** cerca in `docs/index.html` i link `tel:+39...`, `https://wa.me/...`,
-  `mailto:...`. Il numero WhatsApp è anche in `docs/script.js` (`WHATSAPP_NUMBER`).
-- **Social:** sostituisci gli `href="#"` nella sezione `.socials`.
-- **Foto reali:** sostituisci i `<figure class="shot ...">` della gallery con `<img>`
-  (le immagini vanno messe in `docs/`, es. `docs/img/`).
-- **Testi/servizi/recensioni:** sono inline in `docs/index.html`.
+- **Recapiti, testi, servizi, recensioni, social, marchi, zona:** tutto in
+  `docs/content.json`. È l'unico file da toccare per i contenuti.
+- **Foto reali:** metti le immagini in `docs/img/` e indica il percorso in
+  `content.json` → `lavori.elenco[].immagine`.
 - **Colori:** variabili CSS in cima a `docs/style.css` (`:root`).
+- **Struttura/sezioni:** `docs/index.html` (raramente).
 
 ## TODO / prossimi passi
 

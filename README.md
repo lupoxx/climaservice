@@ -9,10 +9,18 @@ Realizzato in **HTML/CSS/JavaScript nativo**, senza framework né dipendenze —
 
 ```
 docs/            cartella servita da GitHub Pages
-  index.html     Markup: hero, servizi, perché noi, zona, lavori, recensioni, contatti, footer
+  index.html     Struttura (contenitori vuoti) — non contiene i testi
   style.css      Stili (mobile-first, palette blu/azzurro)
-  script.js      Menu mobile + form contatti che apre WhatsApp precompilato
+  script.js      Carica content.json e popola la pagina; form -> WhatsApp
+  content.json   ← TUTTI i contenuti del sito (il "database" da editare)
 ```
+
+## Modificare i contenuti
+
+Edita **solo `docs/content.json`**: nome, recapiti, social, servizi, recensioni,
+zona, lavori, ecc. Non serve toccare HTML o JS. Per le foto reali, metti le
+immagini in `docs/img/` e indica il percorso in `content.json`
+(`lavori.elenco[].immagine`).
 
 Su GitHub Pages: *Settings → Pages → branch `release`, cartella `/docs`*.
 Vedi `CLAUDE.md` per i dettagli completi del progetto.
@@ -28,17 +36,19 @@ Vedi `CLAUDE.md` per i dettagli completi del progetto.
 - **Contatti + social** con form che genera un messaggio WhatsApp
 - **Barra fissa mobile** Chiama / WhatsApp
 
-## Da personalizzare
+## Da personalizzare (tutto in `docs/content.json`)
 
-- Recapiti in `docs/index.html` (`tel:`, link `wa.me`, email) e il numero in `docs/script.js` (`WHATSAPP_NUMBER`)
-- Link social (attualmente `#`)
-- Foto reali al posto dei segnaposto nella gallery
-- Nome, P.IVA e dati nel footer
+- Recapiti: `contatti` (telefono, WhatsApp, email, orari)
+- Link social: `social[]` (attualmente `#`)
+- Foto reali: `lavori.elenco[].immagine`
+- Nome, P.IVA e dati: `azienda`
 
 ## Avvio locale
 
-Apri `docs/index.html`, oppure servi la cartella:
+⚠️ Non aprire `index.html` con doppio clic: `content.json` viene caricato via
+`fetch()`, che non funziona col protocollo `file://`. Serve un server locale:
 
 ```bash
 python -m http.server --directory docs
+# poi apri http://localhost:8000
 ```
